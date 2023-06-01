@@ -30,3 +30,6 @@ Você foi contratado por uma empresa de desenvolvimento de software para criar a
 - https://dribbble.com/shots/5792716-Login-page
 - https://dribbble.com/shots/3546598-Sign-In
 - https://www.youtube.com/watch?v=t-EMinSz_Tk
+
+# Final design
+![Captura de tela de 2023-05-31 21-43-46](https://github.com/leticiaschaves/mp-tela-login-tailwind/assets/102541668/7450f631-8eb6-4cea-b36d-788bf7e18db4)
