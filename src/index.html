@@ -6,34 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the most beautiful login page</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/fonts.css">
     <script defer src="./index.js"></script>
 </head>
-<body class="bg-black w-screen h-screen">
-    <h1 class="text-3xl font-bold underline">hello</h1>
-    <form id="form" action="/">
-        <legend>
-            sign in
-        </legend>
-        <div class="error"></div>
-        <div class="inputs">
-            <label id="username">
-                <input type="text" placeholder="username" 
-                class="input"
-                id="username"
-                submitBtn/>
-            </label>
-            <label id="password">
-                <input type="password" placeholder="password"
-                class="input"
-                id="password" />
-        </label>
-        </div>
-        <div class="button">
-            <input type="submit"
-            id="button"
-            value="submit"
-            disabled />
-        </div>
-    </form>
+<body class="flex items-center justify-center w-screen h-screen bg-gradient-to-tr from-pink-700 to-purple-700">
+    <section class="flex h-[600px] bg-slate-900 rounded-3xl sm:w-10/12 lg:w-1/2 border-purple-700 border-2 border-s-pink-700">
+        <section id="form" class="flex flex-col items-center justify-center basis-full pl-10px rounded-tl-3xl rounded-bl-3xl md:basis-5/12">
+            <form action="" class="flex-col p-5 felx">
+                    <h1 class="mb-10 text-5xl text-center text-pink-500">
+                        sign in
+                    </h1>
+                    <div class="flex flex-col content-center mb-3 text-white">
+                        <label 
+                        class="h-16 group"
+                        id="username">
+                            <div class="h-10 transition-opacity ease-linear rounded-lg opacity-0 blur-md bg-gradient-to-tl from-blue-800 group-focus-within:opacity-100 to-pink-500"></div>
+                            <div class="relative rounded-lg bg-none -top-10 focus-within:bg-gradient-to-tl from-blue-800 to-pink-500">
+                            <input
+                            type="text" placeholder="username" 
+                            class="h-10 p-2 w-[100%] basis-5/12
+                            bg-transparent
+                            border-2 border-solid rounded-lg text-xl appearance-none outline-none border-slate-400"
+                            id="username"/>
+                            </div>
+                        </label>
+                        <label
+                        class="h-16 group"
+                        id="password">
+                            <div class="h-10 transition-opacity ease-linear rounded-lg opacity-0 blur-md bg-gradient-to-tl from-blue-800 group-focus-within:opacity-100 to-pink-500"></div>
+                            <div class="relative rounded-lg bg-none -top-10 focus-within:bg-gradient-to-tl from-blue-800 to-pink-500">
+                                <input type="password" placeholder="password"
+                                class="h-10 p-2 w-[100%] basis-5/12
+                                bg-transparent
+                                border-2 border-solid 
+                                text-xl rounded-lg appearance-none outline-none border-slate-400"
+                                id="password" />
+                            </div>
+                        </label>
+                    <a
+                    class="text-center text-gray-500 underline cursor-pointer hover:text-pink-500">reset password</a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex w-full h-30">
+                            <button
+                            class="w-full p-2 mb-3 text-xl font-bold text-white transition ease-linear bg-white rounded-lg cursor-pointer bg-gradient-to-tl from-blue-800 to-pink-500 hover:hue-rotate-60"
+                            type="submit"
+                            id="button"
+                            disabled>
+                                submit
+                            </button>
+                        </div>
+                        <a
+                        class="text-right text-gray-500 underline cursor-pointer hover:text-pink-500">not a member yet</a>
+                    </div>
+            </form>
+        </section>
+        <section id="img" class="w-0 md:w-7/12 bg-[url('/img/bg.jpg')] bg-cover rounded-3xl shadow-[inset_400px_30px_700px_-100px_theme(colors.slate.900)]">
+        </section>
+            </section>
 </body>
 </html>
